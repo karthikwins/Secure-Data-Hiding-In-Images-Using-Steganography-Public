@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+</head>
+<body>
+    <h1>Welcome to My Project</h1>
+    <form action="/submit" method="post">
+        <label for="message">Enter Secret Message:</label>
+        <input type="text" id="message" name="message" required>
+        <br>
+        <label for="passcode">Enter Passcode:</label>
+        <input type="text" id="passcode" name="passcode" required>
+        <br>
+        <button type="submit">Hide Data</button>
+    </form>
+
+    <form action="/decrypt" method="post">
+        <label for="decrypt_passcode">Enter Passcode for Decryption:</label>
+        <input type="text" id="decrypt_passcode" name="decrypt_passcode" required>
+        <br>
+        <button type="submit">Show Secret Message</button>
+    </form>
+</body>
+</html>
